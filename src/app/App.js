@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Product from '../product/product';
+
 import HttpService from '../services/http-services';
 
 const http = new HttpService();
