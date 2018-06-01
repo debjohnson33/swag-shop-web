@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Product from '../product/product';
+import WishList from '../wishlist/wishlist';
 
 import HttpService from '../services/http-services';
 
@@ -43,9 +44,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to the Swag Shop</h1>
         </header>
-        <div className="container App-main">
+        <div className="container-fluids App-main">
           <div className="row">
-            {this.productList()}
+            <div className="col-sm-8">
+              {this.productList()}
+            </div>
+            <div className="col-sm-4">
+              <WishList />
+            </div>
           </div>
         </div>
       </div>
