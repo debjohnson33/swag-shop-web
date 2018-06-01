@@ -27,6 +27,15 @@ class DataService {
 			} 
 		}
 	}
+
+	itemOnWishList = item => {
+		for (var x = 0; x < wishList.length; x++) {
+			if (wishList[x]._id === item._id) {
+				return true;
+			} 
+		}
+		return false;
+	}
 }
 
 export default DataService;
