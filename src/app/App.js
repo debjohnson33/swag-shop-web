@@ -47,7 +47,10 @@ class App extends Component {
         <div className="container-fluids App-main">
           <div className="row">
             <div className="col-sm-8">
-              {this.productList()}
+              <div className="row">
+                {this.productList()}
+              </div>
+              
             </div>
             <div className="col-sm-4">
               <WishList />
